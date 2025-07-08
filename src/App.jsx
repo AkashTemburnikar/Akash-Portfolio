@@ -3,7 +3,9 @@ function App() {
         <div className="font-sans text-gray-900 bg-white">
             <header className="bg-purple-100 py-12 text-center">
                 <h1 className="text-4xl font-bold">Akashappa Temburnikar (Akash)</h1>
-                <p className="mt-2 text-lg text-gray-700">Software Engineer | Cloud & Backend Developer</p>
+                <p className="mt-2 text-lg text-gray-700">
+                    Software Engineer • Cloud-Native .NET Developer • Azure & Kubernetes
+                </p>
                 <p className="mt-1">📧 <a href="mailto:akashappa.te@gmail.com" className="text-purple-600">akashappa.te@gmail.com</a></p>
             </header>
 
