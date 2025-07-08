@@ -18,22 +18,21 @@ function Resume() {
                 </div>
             </div>
 
-            {/* SKILLS */}
             <section>
                 <div className="flex items-center gap-2 mb-2 text-xl font-semibold text-purple-700">
                     <Settings2 size={22} />
                     <h2>SKILLS</h2>
                 </div>
-                <ul className="list-disc list-inside space-y-1 text-sm leading-relaxed">
-                    <li>Programming Languages & Frameworks: C#, Python, T-SQL, PowerShell, .NET Core, ASP.NET Core (Web API), ASP.NET MVC, Entity Framework Core, LINQ, JavaScript, ReactJS</li>
-                    <li>Cloud Platform: Microsoft Azure (App Service, API Management, Key Vault, Redis, Service Bus, Web Jobs, Storage Accounts, Azure Functions, Azure Active Directory, Application Insights)</li>
-                    <li>Infrastructure & DevOps: Azure DevOps (YAML Pipelines), Terraform, Helm, GitHub Actions, Git</li>
-                    <li>Testing & Quality Assurance: NUnit, Moq, SpecFlow, k6, SonarQube, Checkmarx</li>
-                    <li>Database Technologies: MS SQL Server</li>
-                    <li>Security & Identity: JWT, RBAC, MFA, Okta</li>
-                    <li>Containerization & Orchestration: Docker, Kubernetes (AKS)</li>
-                    <li>Architecture & Design Patterns: Microservices, Clean Architecture, Domain-Driven Design, Event Driven Architecture</li>
-                    <li>Tools & IDEs: Visual Studio, JetBrains Rider, VS Code</li>
+                <ul className="text-sm leading-relaxed space-y-1">
+                    <li><span className="font-semibold">Programming Languages & Frameworks:</span> C#, Python, T-SQL, PowerShell, .NET Core, ASP.NET Core (Web API), ASP.NET MVC, Entity Framework Core, LINQ, JavaScript, ReactJS</li>
+                    <li><span className="font-semibold">Cloud Platform:</span> Microsoft Azure (App Service, API Management, Key Vault, Redis, Service Bus, Web Jobs, Storage Accounts, Azure Functions, Azure Active Directory, Application Insights)</li>
+                    <li><span className="font-semibold">Infrastructure & DevOps:</span> Azure DevOps (YAML Pipelines), Terraform, Helm, GitHub Actions, Git</li>
+                    <li><span className="font-semibold">Testing & Quality Assurance:</span> NUnit, Moq, SpecFlow, k6, SonarQube, Checkmarx</li>
+                    <li><span className="font-semibold">Database Technologies:</span> MS SQL Server</li>
+                    <li><span className="font-semibold">Security & Identity:</span> JWT, RBAC, MFA, Okta</li>
+                    <li><span className="font-semibold">Containerization & Orchestration:</span> Docker, Kubernetes (AKS)</li>
+                    <li><span className="font-semibold">Architecture & Design Patterns:</span> Microservices, Clean Architecture, Domain-Driven Design, Event Driven Architecture</li>
+                    <li><span className="font-semibold">Tools & IDEs:</span> Visual Studio, JetBrains Rider, VS Code</li>
                 </ul>
             </section>
 
