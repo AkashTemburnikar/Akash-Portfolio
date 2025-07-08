@@ -1,7 +1,7 @@
 {
-  "name": "akash-myportfolio",
+  "name": "akash-portfolio",
   "private": true,
-  "homepage": "https://AkashTemburnikar.github.io/Akash-MyPortfolio",
+  "homepage": "https://github.com/AkashTemburnikar/Akash-Portfolio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
