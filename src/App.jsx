@@ -1,105 +1,118 @@
-function App() {
+import {
+    Mail,
+    Settings2,
+    Briefcase,
+    GraduationCap,
+    Award,
+    FolderKanban,
+} from "lucide-react";
+function Resume() {
     return (
-        <div className="font-sans text-gray-900 bg-white">
-            <header className="bg-purple-100 py-12 text-center">
-                <h1 className="text-4xl font-bold">Akashappa Temburnikar (Akash)</h1>
-                <p className="mt-2 text-lg text-gray-700">
-                    Software Engineer • Cloud-Native .NET Developer • Azure & Kubernetes
-                </p>
-                <p className="mt-1">📧 <a href="mailto:akashappa.te@gmail.com" className="text-purple-600">akashappa.te@gmail.com</a></p>
-            </header>
+        <div className="max-w-4xl mx-auto px-4 py-10 font-sans text-gray-900 space-y-10">
+            <div>
+                <h1 className="text-3xl font-bold">Akashappa Temburnikar (Akash)</h1>
+                <div className="flex items-center gap-2 mt-2 text-sm text-gray-600">
+                    <Mail size={18} />
+                    <span>akashappa.te@gmail.com</span>
+                </div>
+            </div>
 
-            <main className="max-w-5xl mx-auto px-4 py-10 space-y-10">
-                <section>
-                    <h2 className="text-2xl font-semibold text-purple-700 mb-3">Skills</h2>
-                    <ul className="list-disc pl-6 space-y-1 text-sm">
-                        <li><strong>Languages & Frameworks:</strong> C#, Python, T-SQL, PowerShell, .NET Core, ASP.NET Core (Web API), MVC, EF Core, LINQ, JavaScript, ReactJS</li>
-                        <li><strong>Cloud:</strong> Azure (App Service, APIM, Key Vault, Redis, Service Bus, Web Jobs, Storage, Functions, AAD, App Insights)</li>
-                        <li><strong>Infrastructure/DevOps:</strong> Azure DevOps (YAML), Terraform, Helm, GitHub Actions, Git</li>
-                        <li><strong>Testing:</strong> NUnit, Moq, SpecFlow, k6, SonarQube, Checkmarx</li>
-                        <li><strong>Database:</strong> MS SQL Server</li>
-                        <li><strong>Security:</strong> JWT, RBAC, MFA, Okta</li>
-                        <li><strong>Containers:</strong> Docker, Kubernetes (AKS)</li>
-                        <li><strong>Architecture:</strong> Microservices, Clean Architecture, DDD, Event-Driven Architecture</li>
-                        <li><strong>Tools:</strong> VS, Rider, VS Code</li>
-                    </ul>
-                </section>
+            <section>
+                <div className="flex items-center gap-2 mb-2 text-xl font-semibold text-purple-700">
+                    <Settings2 size={22} />
+                    <h2>SKILLS</h2>
+                </div>
+                <pre className="whitespace-pre-wrap text-sm leading-relaxed">
+• Programming Languages & Frameworks: C#, Python, T-SQL, PowerShell, .NET Core, ASP.NET Core (Web API), ASP.NET MVC, Entity Framework Core, LINQ, JavaScript, ReactJS
+• Cloud Platform: Microsoft Azure (App Service, API Management, Key Vault, Redis, Service Bus, Web Jobs, Storage Accounts, Azure Functions, Azure Active Directory, Application Insights).
+• Infrastructure & DevOps: Azure DevOps (YAML Pipelines), Terraform, Helm, GitHub Actions, Git
+• Testing & Quality Assurance: NUnit, Moq, SpecFlow, k6, SonarQube, Checkmarx
+• Database Technologies: MS SQL Server
+• Security & Identity: JWT, RBAC, MFA, Okta
+• Containerization & Orchestration: Docker, Kubernetes (AKS)
+• Architecture & Design Patterns: Microservices, Clean Architecture, Domain-Driven Design, Event Driven Architecture
+• Tools & IDEs: Visual Studio, JetBrains Rider, VS Code
+        </pre>
+            </section>
 
-                <section>
-                    <h2 className="text-2xl font-semibold text-purple-700 mb-3">Experience</h2>
+            <section>
+                <div className="flex items-center gap-2 mb-2 text-xl font-semibold text-purple-700">
+                    <Briefcase size={22} />
+                    <h2>EXPERIENCE</h2>
+                </div>
+                <pre className="whitespace-pre-wrap text-sm leading-relaxed">
+General Motors Financial – Irving, Texas       July 2021 – Present
+Software Development Engineer 
 
-                    <div className="space-y-5 text-sm">
-                        <div>
-                            <h3 className="font-bold">General Motors Financial – Irving, TX (Jul 2021 – Present)</h3>
-                            <p><strong>Software Development Engineer</strong></p>
-                            <p className="mt-1 underline">LeadHub Modernization</p>
-                            <ul className="list-disc pl-6">
-                                <li>Modernized legacy platform to cloud-native microservices on AKS</li>
-                                <li>Built event-driven services using Azure Service Bus Queues</li>
-                                <li>Automated recall notifications with Azure Functions</li>
-                                <li>Used DDD, Clean Architecture, Terraform, Key Vault</li>
-                            </ul>
-                            <p className="mt-2 underline">Shop Click Drive</p>
-                            <ul className="list-disc pl-6">
-                                <li>Built secure .NET Core APIs with Okta + Redis + APIM</li>
-                                <li>Automated infrastructure and CI/CD with Terraform + Azure DevOps</li>
-                            </ul>
-                        </div>
+LeadHub Modernization
+• Supported modernization of a legacy platform into a cloud-native microservices architecture on Azure Kubernetes Service (AKS).
+• Contributed to event-driven .NET Core microservices using Azure Service Bus Queues, enabling scalable, asynchronous lead ingestion and processing.
+• Developed an Azure Function that automated recall notifications based on vehicle VINs, helping ensure timely outreach within the lead management system.
+• Applied Clean Architecture and Domain-Driven Design (DDD) to ensure long-term maintainability and extensibility.
+• Managed infrastructure provisioning, secret storage, monitoring, and CI/CD using Terraform, Azure DevOps, Key Vault, and Application Insights.
+• Conducted code reviews, led technical discussions, and participated in sprint planning to uphold engineering standards and mentor junior team members.
 
-                        <div>
-                            <h3 className="font-bold">Kalderos – Chicago, IL (Feb 2021 – May 2021)</h3>
-                            <ul className="list-disc pl-6">
-                                <li>Built Python workflows to transform healthcare rebate data into Snowflake</li>
-                            </ul>
-                        </div>
+Shop Click Drive
+• Built a .NET Core API integration platform hosted on Azure App Services, enabling secure and scalable data exchange between GM and GM Financial systems.
+• Delivered high-performance APIs secured through Azure API Management (APIM) and Okta-based authentication.
+• Optimized system responsiveness with Azure Redis Cache and enabled deep diagnostics through Application Insights.
+• Automated infrastructure and deployment pipelines using Terraform and Azure DevOps.
 
-                        <div>
-                            <h3 className="font-bold">Medpace Labs – Cincinnati, OH (Jun 2020 – Jan 2021)</h3>
-                            <ul className="list-disc pl-6">
-                                <li>Developed lab management tools in ASP.NET + SQL Server</li>
-                            </ul>
-                        </div>
+Kalderos – Chicago, Illinois       February 2021 –May 2021
+Software Engineer
+• Developed Python workflows for transforming and validating healthcare rebate data and loading it into Snowflake to support downstream analytics and reporting.
 
-                        <div>
-                            <h3 className="font-bold">ProcessMAP (Ideagen EHS) – Hyderabad, India (Aug 2016 – Jul 2019)</h3>
-                            <ul className="list-disc pl-6">
-                                <li>Built ASP.NET MVC apps with EF + Web API</li>
-                                <li>Migrated Classic ASP to React + Redux, increasing adoption 50%</li>
-                                <li>Optimized dynamic SQL/stored procedures</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
+Medpace Reference Laboratories – Cincinnati, Ohio       June 2020 – January 2021
+Software Engineer
+• Worked full-time as part of the Master’s Capstone requirement, contributing to lab data systems used in clinical trials.
+• Developed internal lab management modules using ASP.NET Web Forms and SQL Server, aligned with business and UI requirements for clinical trial data workflows.
 
-                <section>
-                    <h2 className="text-2xl font-semibold text-purple-700 mb-3">Education</h2>
-                    <ul className="list-disc pl-6 text-sm">
-                        <li>M.Eng Computer Science – University of Cincinnati (2019–2020)</li>
-                        <li>B.Tech CSE – JNTU Hyderabad (2012–2016)</li>
-                    </ul>
-                </section>
+ProcessMAP (now Ideagen EHS) – Hyderabad, India       August 2016 – July 2019
+Software Engineer
+• Designed and developed features in ASP.NET MVC, Web API, and Entity Framework to support enterprise EHS platforms.  
+• Migrated legacy Classic ASP front-end applications to ReactJS with Redux, increasing usability and adoption by 50%. 
+• Refactored stored procedures and dynamic SQL queries to enhance database performance and reduce execution
+        </pre>
+            </section>
 
-                <section>
-                    <h2 className="text-2xl font-semibold text-purple-700 mb-3">Certificates</h2>
-                    <ul className="list-disc pl-6 text-sm">
-                        <li>Microsoft Certified: Azure Fundamentals (June 2022, ID: I314-5913)</li>
-                    </ul>
-                </section>
+            <section>
+                <div className="flex items-center gap-2 mb-2 text-xl font-semibold text-purple-700">
+                    <Award size={22} />
+                    <h2>EDUCATION</h2>
+                </div>
+                <pre className="whitespace-pre-wrap text-sm leading-relaxed">
+University of Cincinnati – Cincinnati, OH       August 2019 – December 2020
+• Master of Engineering in Computer Science.
 
-                <section>
-                    <h2 className="text-2xl font-semibold text-purple-700 mb-3">Projects</h2>
-                    <ul className="list-disc pl-6 text-sm">
-                        <li>Built and deployed React-based portfolio to GitHub Pages</li>
-                        <li><a href="https://akashtemburnikar.github.io/Akash-Portfolio/" className="text-purple-600">Visit: Akash-MyPortfolio</a></li>
-                    </ul>
-                </section>
-            </main>
+Jawaharlal Nehru Technological University – Hyderabad, India       October 2012 – April 2016
+• Bachelor of Technology in Computer Science and Engineering.
+        </pre>
+            </section>
 
-            <footer className="text-center text-sm text-gray-400 py-4">
-                © {new Date().getFullYear()} Akashappa Temburnikar
-            </footer>
+            <section>
+                <div className="flex items-center gap-2 mb-2 text-xl font-semibold text-purple-700">
+                    <Certificate size={22} />
+                    <h2>Certificates</h2>
+                </div>
+                <pre className="whitespace-pre-wrap text-sm leading-relaxed">
+Microsoft Certified: Azure Fundamentals
+• Issued by Microsoft · Credential ID: I314-5913 · June 2022
+        </pre>
+            </section>
+
+            <section>
+                <div className="flex items-center gap-2 mb-2 text-xl font-semibold text-purple-700">
+                    <FolderKanban size={22} />
+                    <h2>Projects</h2>
+                </div>
+                <pre className="whitespace-pre-wrap text-sm leading-relaxed">
+My Portfolio (React Single Page App)
+• Built a personal portfolio with ReactJS and deployed it on GitHub Pages.
+• Live Link: https://akashtemburnikar.github.io/Akash-Portfolio/
+        </pre>
+            </section>
         </div>
     );
 }
 
-export default App;
+export default Resume;
