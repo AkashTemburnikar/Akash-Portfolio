@@ -5,7 +5,9 @@ import {
     GraduationCap,
     Award,
     FolderKanban,
+    BadgeCheck, // ✅ REPLACEMENT FOR Certificate
 } from "lucide-react";
+
 function Resume() {
     return (
         <div className="max-w-4xl mx-auto px-4 py-10 font-sans text-gray-900 space-y-10">
@@ -32,7 +34,7 @@ function Resume() {
 • Containerization & Orchestration: Docker, Kubernetes (AKS)
 • Architecture & Design Patterns: Microservices, Clean Architecture, Domain-Driven Design, Event Driven Architecture
 • Tools & IDEs: Visual Studio, JetBrains Rider, VS Code
-        </pre>
+                </pre>
             </section>
 
             <section>
@@ -72,7 +74,7 @@ Software Engineer
 • Designed and developed features in ASP.NET MVC, Web API, and Entity Framework to support enterprise EHS platforms.  
 • Migrated legacy Classic ASP front-end applications to ReactJS with Redux, increasing usability and adoption by 50%. 
 • Refactored stored procedures and dynamic SQL queries to enhance database performance and reduce execution
-        </pre>
+                </pre>
             </section>
 
             <section>
@@ -86,18 +88,18 @@ University of Cincinnati – Cincinnati, OH       August 2019 – December 2020
 
 Jawaharlal Nehru Technological University – Hyderabad, India       October 2012 – April 2016
 • Bachelor of Technology in Computer Science and Engineering.
-        </pre>
+                </pre>
             </section>
 
             <section>
                 <div className="flex items-center gap-2 mb-2 text-xl font-semibold text-purple-700">
-                    <Certificate size={22} />
+                    <BadgeCheck size={22} />
                     <h2>Certificates</h2>
                 </div>
                 <pre className="whitespace-pre-wrap text-sm leading-relaxed">
 Microsoft Certified: Azure Fundamentals
 • Issued by Microsoft · Credential ID: I314-5913 · June 2022
-        </pre>
+                </pre>
             </section>
 
             <section>
@@ -109,7 +111,7 @@ Microsoft Certified: Azure Fundamentals
 My Portfolio (React Single Page App)
 • Built a personal portfolio with ReactJS and deployed it on GitHub Pages.
 • Live Link: https://akashtemburnikar.github.io/Akash-Portfolio/
-        </pre>
+                </pre>
             </section>
         </div>
     );
